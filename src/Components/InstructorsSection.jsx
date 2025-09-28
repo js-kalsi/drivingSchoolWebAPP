@@ -3,12 +3,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Star, Award, Clock, Users, ShieldCheck } from "lucide-react";
 import { motion } from "framer-motion";
+import consts from "../consts";
+
 
 export default function InstructorsSection() {
   const instructor = {
-    name: "Rajinder Singh",
+    name: consts.INSTRUCTOR.NAME,
     title: "Senior Instructor & Founder",
-    experience: "15+ Years",
+    experience: consts.INSTRUCTOR.EXPERIENCE,
     specialties: ["G2 & G Road Tests", "Highway Driving", "Defensive Driving", "Nervous Drivers"],
     rating: 4.9,
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800",

@@ -2,6 +2,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
 import { motion } from "framer-motion";
+import consts from "../consts";
 
 export default function TestimonialsSection() {
   const testimonials = [
@@ -10,7 +11,7 @@ export default function TestimonialsSection() {
       age: "19",
       test: "G2 Road Test",
       rating: 5,
-      text: "Rajinder was an amazing instructor! He was so patient with me and helped me feel confident behind the wheel. Passed my G2 on the first try!",
+      text: `${consts.INSTRUCTOR.NAME} was an amazing instructor! He was so patient with me and helped me feel confident behind the wheel. Passed my G2 on the first try!`,
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b5bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=150"
     },
     {
